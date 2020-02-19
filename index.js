@@ -28,23 +28,3 @@ function pigLatin(userStr) {
 
 console.log(pigLatin("I love eating"));
 console.log(pigLatin("I love eating and arriving early to places."));
-
-console.log("PIG LATIN 1");
-
-function pigLatin1(userStr1) {
-  const userStrToArr1 = userStr1.toLowerCase().split(" "); // turns the string into an array
-  //   console.log(userStrToArr1);
-  const vowels1 = ["a", "e", "i", "o", "u"];
-  const newArr1 = []; // creates an empty array
-  userStrToArr1.some(word =>
-    vowels1.some(vowel => {
-      if (word[0] === vowel) {
-        newArr1.push(word + "ay");
-      } else if (word[0] !== vowel) {
-        newArr1.push(word);
-      }
-    })
-  );
-  return newArr1;
-}
-console.log(pigLatin1("i do an eager mood And I am"));
