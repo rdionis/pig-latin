@@ -11,3 +11,5 @@ console.log("PIG LATIN TRANSLATION");
 // pigLatin(“Cats are great pets.“) ➞ “Atscay areway reatgay etspay.”
 // pigLatin(“Tom got a small piece of pie.“) ➞ “Omtay otgay away allsmay iecepay ofway iepay.”
 // pigLatin(“He told us a very exciting tale.“) ➞ “Ehay oldtay usway away eryvay excitingway aletay.”
+
+//HERE WILL START SOLUTION 3
