@@ -1,4 +1,4 @@
-console.log("PIG LATIN TRANSLATION");
+//PIG LATIN TRANSLATION
 // Create a function that takes a string of words and moves the first letter of each word to the end of it,
 // then adds ‘ay’ to the end of the word. This is a basic form of “Pig Latin”.
 // a) Move the first letter of each word to the end of the word.
@@ -14,16 +14,18 @@ console.log("PIG LATIN TRANSLATION");
 
 function pigLatin(userStr) {
   const userStrToArr = userStr.split(" "); // turns the string into an array
-  const vowels = ["a", "e", "i", "o", "u"];
-  const newArr = []; // creates an empty array
-  userStrToArr.some(word =>
+  const vowels = ["a", "e", "i", "o", "u"]; // creates an array with all the vowels
+  const wordsStartingWithVowel = []; // creates an empty array
+  userStrToArr.some((
+    word // using the some() method twice to go through the array and check which words have a vowel as its zero index
+  ) =>
     vowels.some(vowel => {
       if (vowel === word[0]) {
-        newArr.push(word + "ay");
+        wordsStartingWithVowel.push(word + "ay"); // pushes the words that start with a vowel to a new array
       }
     })
   );
-  return newArr;
+  return wordsStartingWithVowel;
 }
 
 console.log(pigLatin("I love eating"));
